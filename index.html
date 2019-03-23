@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+	<style type="text/css">
+		.box{
+			width: 400px;
+			padding: 30px;
+		}
+		.items{
+			overflow: hidden;
+		}
+		.item{
+			float: left;
+			width: 200px;
+			padding: 5px;
+			border: 1px solid #e49;
+			margin-right: 10px;
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="box">
+
+		<div>手机号: <input id="phone" type="text" name="" /></div>
+		<div>验证码: <input id="verifyCode" type="text" name="" disabled /><button id="getVerifyCode" disabled>获取验证码</button></div>
+		<div><button id="getCode" disabled>取号</button></div>
+		<div><button id="callCode">叫号</button></div>
+
+	</div>
+
+	<div id="items" class="items">
+
+	</div>
+
+	<script type="text/javascript" src="./bank.js"></script>
+	<script type="text/javascript">
+		window.onload = function () {
+			bank.init();
+		}
+	</script>
+</body>
+</html>
